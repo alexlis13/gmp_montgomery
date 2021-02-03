@@ -2,6 +2,7 @@
 #include <gmp.h>
 #include <curve.h>
 #include <options.h>
+#include <point.h>
 
 void curve_init(struct curve *curve)
 {
