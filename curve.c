@@ -39,6 +39,9 @@ void curve_init(struct curve *curve)
     //clear
     mpz_clears(a, d, e, sum, dif, 0);
 }
+/*
+* 	Выполняет возведение точки point в степень k на кривой по алгоритму «Лесенка Монтгомери»
+*/
 
 void curve_ladder(const struct curve *curve, struct point *point, const mpz_t pow)
 {
@@ -94,7 +97,9 @@ void curve_clear(struct curve *curve)
 {
     mpz_clears(curve->A, curve->B, curve->C, curve->p, curve->q, 0);
 }
-
+/*
+* 	Проверяет, находится ли точка point на кривой
+*/
 int point_on_curve(const struct curve *curve, struct point *point)
 {
     mpz_t i, n, pow, mul;
