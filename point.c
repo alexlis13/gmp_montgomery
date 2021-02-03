@@ -8,7 +8,7 @@ void neutral(struct point *point)
     mpz_set_str(point->Z, "0", 10);
 }
 /*
-* 	Инициализирует точку и кривую параметрами из стандарта
+* Инициализирует точку и кривую параметрами из стандарта
 */
 void point_init(struct point *point)
 {
@@ -33,7 +33,7 @@ void point_init(struct point *point)
 }
 
 /*
-* 	Складывает точку q с точкой r и результат помещает в p1, используя алгоритм xADD
+* Складывает точку q с точкой r и результат помещает в p1, используя алгоритм xADD
 */
 void point_add(struct point *q, const struct point *r, const struct point *p1, const mpz_t p)
 {
@@ -65,7 +65,7 @@ void point_add(struct point *q, const struct point *r, const struct point *p1, c
 }
 
 /*
-* 	Удваивает точку point, используя алгоритм xDBL
+* Удваивает точку point, используя алгоритм xDBL
 */
 void point_double(struct point *point, const mpz_t c, const mpz_t p)
 {
