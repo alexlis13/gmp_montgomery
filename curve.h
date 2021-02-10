@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <gmp.h>
-#include <point.h>
+#include "point.h"
 
 struct curve
 {
