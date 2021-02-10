@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <point.h>
-#include <options.h>
+#include "point.h"
+#include "options.h"
 
 void neutral(struct point *point)
 {
