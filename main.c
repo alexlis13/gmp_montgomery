@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <gmp.h>
-#include <point.h>
-#include <curve.h>
-#include <options.h>
+#include "point.h"
+#include "curve.h"
+#include "options.h"
 #include <stdlib.h>
 
 int main()
