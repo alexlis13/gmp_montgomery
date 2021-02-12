@@ -55,6 +55,21 @@ int main()
         printf("Test 3 true!\n");
     gmp_printf("Result is: Point(%Zd, %Zd)\n", Point.X, Point.Z);
 
+    printf("Test 4:\n");
+    mpz_t k,k1,k2;
+    mpz_set_str(k1,"9", 10);
+    mpz_set_str(k2,"15", 10);
+    curve_ladder(&Curve, &ptk1, k1);
+    curve_ladder(&Curve, &ptk2, k2);
+    point_add(&ptk1, &ptk2, &ptk1, Curve.p);
+    mpz_add(k,k1,k2);
+    curve_ladder(&Curve, &ptk, k);
+    if(mpz_cmp(ptk1.X, ptk.X)!=0)
+        printf("Test 4 true!\n");
+
+    else
+        printf("Test 4 false!\n");
+    
     //clear
     printf("Clear all variables...\n");
     mpz_clears(pow, res, e, rand, test, 0);
