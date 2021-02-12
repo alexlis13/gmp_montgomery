@@ -33,7 +33,7 @@ void point_init(struct point *point)
 }
 
 /*
-* Складывает точку q с точкой r и результат помещает в p1, используя алгоритм xADD
+* Складывает точку q с точкой r и результат помещает в q, используя алгоритм xADD
 */
 void point_add(struct point *q, const struct point *r, const struct point *p1, const mpz_t p)
 {
