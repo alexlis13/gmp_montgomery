@@ -35,7 +35,13 @@ int main()
         printf("Test 1 true!\n");
     else
         printf("Test 1 false!\n");
-
+    
+    struct point ptk;
+    point_init(&ptk);
+    struct point ptk1;
+    point_init(&ptk1);
+    struct point ptk2;
+    point_init(&ptk2);
 
     printf("Test 2:\n");
     mpz_set(test, Point.X);
